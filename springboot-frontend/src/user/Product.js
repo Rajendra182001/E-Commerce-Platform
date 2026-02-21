@@ -21,19 +21,18 @@ const Product = () => {
       } catch (error) {
         console.error("Error fetching product", error);
       }
-    };
+    };  
 
     const fetchImage = async () => {
       try {
         const res = await axios.get(`http://localhost:8080/product/${id}/image`, {
-          responseType: "blob"
+          responseType:"blob"
         });
         setImageUrl(URL.createObjectURL(res.data));
       } catch (error) {
         console.error("Error fetching image", error);
       }
     };
-
     fetchProduct();
     fetchImage();
   }, [id]);
