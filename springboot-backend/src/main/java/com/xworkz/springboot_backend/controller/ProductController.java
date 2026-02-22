@@ -16,7 +16,11 @@ import java.util.List;
 @Slf4j
 @RestController
 @RequestMapping("/")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(
+        origins = {
+                "http://localhost:3000",
+                "https://e-commerce-platform-1-u3m6.onrender.com"
+        })
 public class ProductController {
 
     private ProductService service;
