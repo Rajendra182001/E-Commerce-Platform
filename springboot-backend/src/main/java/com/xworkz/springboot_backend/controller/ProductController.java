@@ -19,8 +19,11 @@ import java.util.List;
 @CrossOrigin(
         origins = {
                 "http://localhost:3000",
-                "https://e-commerce-platform-1-u3m6.onrender.com"
-        })
+                "https://my-projects-8meohazsd-rajendra-ns-projects.vercel.app"
+        },
+        allowedHeaders = "*",
+        methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE}
+)
 public class ProductController {
 
     private ProductService service;
