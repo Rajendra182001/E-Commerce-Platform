@@ -19,7 +19,8 @@ import java.util.List;
 @CrossOrigin(
         origins = {
                 "http://localhost:3000",
-                "https://my-projects-8meohazsd-rajendra-ns-projects.vercel.app"
+                "https://my-projects-8meohazsd-rajendra-ns-projects.vercel.app",
+                "*"
         },
         allowedHeaders = "*",
         methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE}
